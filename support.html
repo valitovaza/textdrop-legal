@@ -1,13 +1,111 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Support — Add Text</title>
+  <meta name="description" content="Support page for Add Text." />
+  <style>
+    :root{
+      --bg:#0f0f10;
+      --panel:#161618;
+      --text:#f3f4f6;
+      --muted:#a1a1aa;
+      --link:#60a5fa;
+      --border:rgba(255,255,255,.08);
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:radial-gradient(1200px 800px at 10% 0%, rgba(96,165,250,.12), transparent 60%),
+                 radial-gradient(900px 700px at 90% 10%, rgba(34,197,94,.10), transparent 55%),
+                 var(--bg);
+      color:var(--text);
+      font:16px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+    .wrap{
+      max-width:820px;
+      margin:0 auto;
+      padding:48px 20px 64px;
+    }
+    header{
+      margin-bottom:18px;
+    }
+    h1{
+      font-size:28px;
+      line-height:1.2;
+      margin:0 0 10px;
+      letter-spacing:-0.02em;
+    }
+    .meta{
+      color:var(--muted);
+      font-size:14px;
+      margin:0;
+    }
+    .card{
+      margin-top:22px;
+      background:linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:22px 20px;
+      box-shadow:var(--shadow);
+    }
+    h2{
+      font-size:18px;
+      margin:18px 0 8px;
+      letter-spacing:-0.01em;
+    }
+    p{margin:0 0 12px}
+    a{color:var(--link); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .note{
+      border-left:3px solid rgba(96,165,250,.5);
+      padding:10px 12px;
+      margin:14px 0 8px;
+      background:rgba(96,165,250,.08);
+      color:rgba(243,244,246,.95);
+      border-radius:10px;
+    }
+    footer{
+      margin-top:18px;
+      color:var(--muted);
+      font-size:13px;
+    }
+  </style>
 </head>
-<body style="font-family: -apple-system, BlinkMacSystemFont, sans-serif; padding: 24px; max-width: 600px; margin: auto;">
-  <h1>Support</h1>
-  <p>If you need help with the Add Text app, contact us:</p>
-  <p><strong>Email:</strong> <a href="mailto:valitov.azamat.m@gmail.com">valitov.azamat.m@gmail.com</a></p>
+<body>
+  <main class="wrap">
+    <header>
+      <h1>Support</h1>
+      <p class="meta"><strong>App:</strong> Add Text</p>
+    </header>
+
+    <section class="card">
+      <p>
+        Need help with <strong>Add Text</strong>?  
+        We’re happy to help.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        If you have questions, issues, or feedback, contact us by email:
+      </p>
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:valitov.azamat.m@gmail.com">valitov.azamat.m@gmail.com</a>
+      </p>
+
+      <div class="note">
+        Tip: Please include your device model and iOS version if you’re reporting a problem.
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Add Text</p>
+    </footer>
+  </main>
 </body>
 </html>
